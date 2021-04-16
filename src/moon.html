@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling Website | Vanilla JavaScript</title>
+  <link rel="stylesheet" href="../static/css/moon.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img id="starts" src="../static/imgs/moon/stars.png" />
+    <img id="moon" src="../static/imgs/moon/moon.png" />
+    <img id="mountains_behind" src="../static/imgs/moon/mountains_behind.png" />
+    <h2 id="text">Moon Light</h2>
+    <a id="btn" href="#explore">Explore</a>
+    <img id="mountains_front" src="../static/imgs/moon/mountains_front.png" />
+  </section>
+  <div class="sec">
+    <section id="explore">
+      <h2>Parallax Scrolling Website</h2>
+      <p>
+        Recently, Cloudflare announced the general availability (GA) of Cloudflare Pages: a fast, secure, and free way
+        for frontend developers to build, host, and collaborate on Jamstack sites.Recently, Cloudflare announced the
+        general availability (GA) of Cloudflare Pages: a fast, secure, and free way
+        for frontend developers to build, host, and collaborate on Jamstack sites.Recently, Cloudflare announced the
+        general availability (GA) of Cloudflare Pages: a fast, secure, and free way
+        for frontend developers to build, host, and collaborate on Jamstack sites.Recently, Cloudflare announced the
+        general availability (GA) of Cloudflare Pages: a fast, secure, and free way
+        for frontend developers to build, host, and collaborate on Jamstack sites.Recently, Cloudflare announced the
+        general availability (GA) of Cloudflare Pages: a fast, secure, and free way
+        for frontend developers to build, host, and collaborate on Jamstack sites.
+        <br><br>
+        In December last year, Cloudflare announced the beta of Cloudflare Pages, including benefits of hosting on
+        Cloudflare Edge, integration with GitHub repositories, and the Cloudflare Workers Platform. With the GA release
+        of Cloudflare Pages, the company added a few new features such as web analytics, built-in redirects, protected
+        previews, live previews, and optimized images.In December last year, Cloudflare announced the beta of Cloudflare
+        Pages, including benefits of hosting on
+        Cloudflare Edge, integration with GitHub repositories, and the Cloudflare Workers Platform. With the GA release
+        of Cloudflare Pages, the company added a few new features such as web analytics, built-in redirects, protected
+        previews, live previews, and optimized images.In December last year, Cloudflare announced the beta of Cloudflare
+        Pages, including benefits of hosting on
+        Cloudflare Edge, integration with GitHub repositories, and the Cloudflare Workers Platform. With the GA release
+        of Cloudflare Pages, the company added a few new features such as web analytics, built-in redirects, protected
+        previews, live previews, and optimized images.In December last year, Cloudflare announced the beta of Cloudflare
+        Pages, including benefits of hosting on
+        Cloudflare Edge, integration with GitHub repositories, and the Cloudflare Workers Platform. With the GA release
+        of Cloudflare Pages, the company added a few new features such as web analytics, built-in redirects, protected
+        previews, live previews, and optimized images.In December last year, Cloudflare announced the beta of Cloudflare
+        Pages, including benefits of hosting on
+        Cloudflare Edge, integration with GitHub repositories, and the Cloudflare Workers Platform. With the GA release
+        of Cloudflare Pages, the company added a few new features such as web analytics, built-in redirects, protected
+        previews, live previews, and optimized images.
+        <br><br>
+        According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core
+        vitals.According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core
+        vitals.According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core
+        vitals.According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core
+        vitals.According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core
+        vitals.According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core
+        vitals.According to a Cloudflare blog post on the GA release, Web analytics is a free built-in feature allowing
+        developers to observe traffic to a website from the go-live date. With a single click, developers can start
+        tracking their site's progress and performance, including metrics about your traffic and web core vitals.
+      </p>
+    </section>
+  </div>
+  <script type="text/javascript">
+    let starts = document.getElementById('starts');
+    let moon = document.getElementById('moon');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+    let header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      let value = window.scrollY;
+      starts.style.left = value * 0.25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      mountains_behind.style.top = value * 0.5 + 'px';
+      mountains_front.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 1.5 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      header.style.top = value * 0.5 + 'px';
+    })
+  </script>
+</body>
+
+</html>
