@@ -19,3 +19,7 @@ clip-path:path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
 ```
 直接使用效果可以使用此工具 [bennettfeely.com]("https://bennettfeely.com/clippy/") 网站。<br/>
 张鑫旭：[CSS3 clip-path polygon图形构建与动画变换二三事]("https://www.zhangxinxu.com/wordpress/2015/03/css3-clip-path-polygon-shape-transition-animation/")
+
+### 界面动画
+[image_animation.html]("./src/image_animation.html")
+界面使用了 transform-style: preserve-3d; perspective: 500px; 两个样式表属性。
