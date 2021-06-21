@@ -53,13 +53,13 @@ section h2 {
 @keyframes animate {
     0% {
         transform: translateZ(2000px);
-        background: url("../imgs/img_animation/image.jpg") fixed center;
+        background: url("image.jpg") fixed center;
         background-size: cover;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
     100% {
         transform: translateZ(0px);
-        background: url("../imgs/img_animation/image.jpg") fixed center;
+        background: url("image.jpg") fixed center;
         background-size: cover;
         border: 1px solid rgba(0, 0, 0, .1);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
@@ -68,7 +68,7 @@ section h2 {
 
 section.active .banner .blocks {
     animation: animateTwo 2s ease-in-out forwards;
-    background: url("../imgs/img_animation/image.jpg") fixed center;
+    background: url("image.jpg") fixed center;
     background-size: cover;
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -77,13 +77,13 @@ section.active .banner .blocks {
 @keyframes animateTwo {
     0% {
         transform: translateZ(0px);
-        background: url("../imgs/img_animation/image.jpg") fixed center;
+        background: url("image.jpg") fixed center;
         background-size: cover;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
     100% {
         transform: translateZ(2000px);
-        background: url("../imgs/img_animation/image.jpg") fixed center;
+        background: url("image.jpg") fixed center;
         background-size: cover;
         border: 1px solid rgba(0, 0, 0, .1);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
